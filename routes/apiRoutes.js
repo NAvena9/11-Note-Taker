@@ -2,17 +2,18 @@ var db = [];
 const path = require("path");
 const fs = require("fs");
 const uniqid = require("uniqueid");
+const router = require("express").Router();
 
-module.exports = (app) => {
+
     //API Gets request
-    app.get('api/notes', (req, res) =>
+    router.get('api/notes', (req, res) => {
         res.sendFile(path.join(__dirname + "/" + "db", "db.json")) /// try later "/db" instead of "/"+"db"
-    );
+    });
 
-    app.post('/api/notes', (req, res) => {
-        const newOne = req.body;
-        newOne.id = uniqid();
-        db.push(newOne);
+    router.post('/api/notes', (req, res) => {
+        const newNote = req.body;
+        newNote.id = uniqid();
+        db.push(newNote);
         //console.log(db);
         fs.writeFile(__dirname + "/db/db.json", JSON.stringify(db), (err) => {
             if (err) console.log(err);   
@@ -20,7 +21,7 @@ module.exports = (app) => {
         res.sendFile(path.join(__dirname, "notes.html"));
     });
 
-    app.delete("api/notes/:id", (req, res) => {
+    require.delete("api/notes/:id", (req, res) => {
         const selected = req.params.id;
         db = db.filter((note) => {
             return note.id != selected;
@@ -32,4 +33,4 @@ module.exports = (app) => {
         return res.sendFile(path.join (__dirname, "notes.html"));
     });
 
-}
+    module.exports = router;

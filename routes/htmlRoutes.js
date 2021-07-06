@@ -1,11 +1,11 @@
 const path = require('path');
+const router = require("express").Router();
 
 
-module.exports = (app) => {
     //HTML GET Requests
     //each route below shows the usr an HTML page of content
 
-    app.get('/notes', (req, res) => {
+    router.get('/notes', (req, res) => {
         res.sendFile(path.join(__dirname, '../public/notes.html'))
     });
 
@@ -13,8 +13,8 @@ module.exports = (app) => {
     //     res.sendFile(path.join(__dirname, '../public/notes.html'))
     // });
 
-    app.get('*', (req, res) => {
+    router.get('*', (req, res) => {
         res.sendFile(path.join(__dirname, '../public/index.html'))
     });
 
-};
+    module.exports = router;
