@@ -25,7 +25,7 @@ const hide = (elem) => {
 // activeNote is used to keep track of the note in the textarea
 let activeNote = {};
 
-const getNotes = () =>
+const getNotes = () =>     // this is getting the notes from the route notes, everything with a header(that is generated) will be fetch
   fetch('/api/notes', {
     method: 'GET',
     headers: {
@@ -33,7 +33,7 @@ const getNotes = () =>
     },
   });
 
-const saveNote = (note) =>
+const saveNote = (note) =>  // we are saving the notes on the notes route body
   fetch('/api/notes', {
     method: 'POST',
     headers: {
@@ -42,7 +42,7 @@ const saveNote = (note) =>
     body: JSON.stringify(note),
   });
 
-const deleteNote = (id) =>
+const deleteNote = (id) =>  //deletes notes based on their id
   fetch(`/api/notes/${id}`, {
     method: 'DELETE',
     headers: {
@@ -50,7 +50,7 @@ const deleteNote = (id) =>
     },
   });
 
-const renderActiveNote = () => {
+const renderActiveNote = () => {   //renders the active note 
   hide(saveNoteBtn);
 
   if (activeNote.id) {
@@ -66,7 +66,7 @@ const renderActiveNote = () => {
   }
 };
 
-const handleNoteSave = () => {
+const handleNoteSave = () => {   ///this is the firs step, a note is created
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
@@ -119,7 +119,7 @@ const handleRenderSaveBtn = () => {
 // Render the list of note titles
 const renderNoteList = async (notes) => {
   let jsonNotes = await notes.json();
-  if (window.location.pathname === '/notes') {
+  if (window.location.pathname === '/notes') {     ////OJO
     noteList.forEach((el) => (el.innerHTML = ''));
   }
 
