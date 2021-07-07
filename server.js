@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3009; //setting up the port
 //set up the express app to handle data parsing, static and route middleware
 app.use(express.json());  //es como un default, viene en otros ejemplos
 app.use(express.urlencoded({ extended: true }));  //es como un default, viene en otros ejemplos
-app.use(express.static("public"));
+// app.use(express.static("public"));
 require("./routes/apiRoutes")(app);
 // app.use('/api', apiRoutes);
 require("./routes/htmlRoutes")(app);

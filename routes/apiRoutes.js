@@ -9,7 +9,7 @@ const uniqid = require("uniqid");
 module.exports = (app) => {
 
     app.get('/api/notes', (req, res) => {
-        res.sendFile(path.join(__dirname + "/" + "db", "db.json")) /// try later "/db" instead of "/"+"db"
+        res.sendFile(path.join(__dirname + "/" + "db", "db.json")) /// try later "/db" instead of "/"+"db"   //__dirname + "/" + "db", "db.json")
     });
 
     app.post('/api/notes', (req, res) => {
