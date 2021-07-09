@@ -1,16 +1,17 @@
 # 11 - Express.js: Note Taker
 
-## Project 
+## Project  
+- - - 
 
 Your assignment is to modify starter code to create an application called Note Taker that can be used to write and save notes. This application will use an Express.js back end and will save and retrieve note data from a JSON file.
 
 The application’s front end has already been created. It's your job to build the back end, connect the two, and then deploy the entire application to Heroku.
 
-
-## Table of Contents
+- - -
+## Table of Contents  
+- - -
 
 - [Installation](#Installation)
-- [Usage](#Usage)
 - [UserStory](#UserStory)
 - [AcceptanceCriteria](#AcceptanceCriteria)
 - [Screenshots](#Screenshots&Test)
@@ -18,28 +19,27 @@ The application’s front end has already been created. It's your job to build t
 
 
 
+- - -
+## Installation  
+- - -
 
-## Installation
-
-FILL UP....
+1- Clone the repo  
+2- Use the package manager "npm" to install all the node modules that are on the package.json.  
 
 ```bash
 npm install
 ```
 
-
-
-## Usage
-
-FILL UP....
-
+3- Run the following command to start the server on your local machine.
 ```bash 
 node index.js
 ```
 
 
 
-## User Story
+- - -
+## User Story  
+- - -
 
 ```
 AS A small business owner
@@ -48,8 +48,9 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ```
 
 
-
-## Acceptance Criteria
+- - -
+## Acceptance Criteria  
+- - -
 
 ```
 GIVEN a note-taking application
@@ -68,8 +69,9 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ```
 
 
-
+- - -
 ## Screenshots & Test
+- - -
 The following gifs and images show the application appearance:
 
 ![Team Profile](Assets/test.gif)
@@ -80,22 +82,25 @@ The following gifs and images show the application appearance:
 
 
 
-  
+- - -
 ## Demo URL 
+- - -
 
 The following link takes you to a video with the app demo:
 URL: https://drive.google.com/file/d/1w0guKYPV2DTKYcz_-aAi7Fk1jhcsN2OD/view?usp=sharing
 
 
 
-
+- - -
 ## Used Frameworks/Technologies
+- - -
 
-- Inquirer
+- Express
 - Node.js
-- Jest
+- Uniqid
 - JavaScript
-- OOP
+- Heroku
+- JavaScript
 
 
 
