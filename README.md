@@ -74,11 +74,11 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - - -
 The following gifs and images show the application appearance:
 
-![Team Profile](Assets/test.gif)
 
-![Team Profile](Assets/inputs.gif)
+![demo](Assets/demo-one.png)
 
-![demo](Assets/demo.png)
+
+![demo](Assets/demo-two.png)
 
 
 
