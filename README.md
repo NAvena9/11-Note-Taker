@@ -86,9 +86,8 @@ The following gifs and images show the application appearance:
 ## Demo URL 
 - - -
 
-The following link takes you to a video with the app demo:
-URL: https://drive.google.com/file/d/1w0guKYPV2DTKYcz_-aAi7Fk1jhcsN2OD/view?usp=sharing
-
+You can find the app deployed on the following link  
+<a href="https://intense-brushlands-09129.herokuapp.com/" target="_blank">URL to App</a>
 
 
 - - -
